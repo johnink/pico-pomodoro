@@ -1,7 +1,7 @@
 # pico-pomodoro
 A pomodoro clock running on a Raspberry Pi Pico.
 
-![alt text](https://github.com/johnink/pico-pomodoro/blob/main/pico.png?raw=true)
+![alt text](https://github.com/johnink/pico-pomodoro/blob/main/pico.jpg?raw=true)
 
 Materials needed:
 Pimoroni Pico Inky eInk display
