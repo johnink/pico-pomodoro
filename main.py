@@ -1,3 +1,13 @@
+# pico-pomodoro
+#
+# uses: 
+#     Pico Inky 296x128 eink display from Pimono
+#     Buzzer
+#
+# installed:
+#    https://github.com/pimoroni/pimoroni-pico/releases
+#    
+
 import time
 from machine import Pin
 from pimoroni import Button
@@ -16,12 +26,13 @@ button_c = Button(14)
 buzz = Pin(28, Pin.OUT)
 buzz.value(0)
 
-work_cycles = 16
-cycle_tally = 0
-focus_mode = 1
-work_mode = 0
-pause_mode = 0
+work_cycles = 16     # shows how many work cycles are left
+cycle_tally = 0      # keeps a tally of how many pomodoro cycles you've done total
+focus_mode = 1       # when 1 timer is active
+work_mode = 0        # when active, workcycles count down
+pause_mode = 0       # pauses timer
 
+# works the buttons
 switch_hold = 0
 work_hold = 0
 pause_hold = 0
